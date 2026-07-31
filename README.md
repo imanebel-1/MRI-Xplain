@@ -16,11 +16,11 @@ using a three-agent pipeline orchestrated via LangGraph.
 
 The system integrates:
 - **EfficientNet-B0** for brain tumour classification (99.80% accuracy)
-- **Agent 1 — XAI Selector**: searches six gradient-based CAM 
+- **Agent 1 - XAI Selector**: searches six gradient-based CAM 
   configurations across multiple EfficientNet-B0 layer depths
-- **Agent 2 — LLM Vision Judge**: evaluates explanation plausibility 
+- **Agent 2 - LLM Vision Judge**: evaluates explanation plausibility 
   using LLaVA-NeXT (4-bit quantised) with a YOLO-IoU spatial override
-- **Agent 3 — Clinical Reporting Agent**: generates structured natural 
+- **Agent 3 - Clinical Reporting Agent**: generates structured natural 
   language summaries with human-in-the-loop review
 - **YOLOv8n spatial proxy**: provides inference-time tumour localisation 
   without ground-truth masks
